@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap");
+body {
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f6f8;
+  /* background-color: indianred; */
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 10rem 15rem;
+}
+
+/* ============================ A D V A N T A G E S    S E C T I O N =================== */
+#advantges {
+  background-color: #f5f6f8;
+}
+#advantges .container:nth-child(1) {
+  padding: 7rem 15rem 0;
+}
+#advantages-title,
+#partners-title {
+  font-size: 4rem;
+  color: #4b4f5a;
+  margin-bottom: 2rem;
+}
+
+#tabs {
+  background-color: #fff;
+  padding: 1rem 0;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.tab-btn {
+  color: #4b4f5a;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 100%;
+  transition: all 0.3s;
+}
+.tab-btn:hover {
+  color: #000;
+}
+.tab-btn:nth-child(1),
+.tab-btn:nth-child(3) {
+  position: relative;
+}
+
+.tab-btn:nth-child(1)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  background-color: #b0b0b0;
+  top: 0;
+  right: 0;
+}
+.tab-btn:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 30px;
+  background-color: #b0b0b0;
+  top: 0;
+  left: 0;
+}
+
+.active-tab {
+  position: relative;
+}
+.active-tab .tab-btn {
+  color: #000;
+}
+
+.active-tab::before {
+  position: absolute;
+  content: "";
+  bottom: -18px;
+  left: 1%;
+  background-color: #5a91c7;
+  width: 98%;
+  height: 2px;
+}
+
+/* ========================== T A B    S L I D E ====================*/
+#tab-slider {
+  padding: 7rem 5rem;
+  position: relative;
+}
+
+.tab-slide {
+  display: none !important;
+}
+.active-content {
+  display: grid !important ;
+  grid-template-columns: 1fr 1.25fr 0.25fr;
+}
+
+.tab-data-body {
+  margin-left: 20px;
+  padding: 5rem 2rem 5rem 0;
+}
+.tab-subtitle {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #5a91c7;
+}
+.tab-svg {
+  width: 15px;
+  height: 15px;
+}
+.subtitle-name {
+  margin-left: 15px;
+  font-size: 0.8rem;
+}
+.tab-title {
+  margin: 0;
+  font-size: 2rem;
+  color: #4b4f5a;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.tab-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 1.5rem;
+}
+
+.tab-list-desc {
+  margin-bottom: 10px;
+  position: relative;
+}
+.tab-list-desc::before {
+  content: url("../imgs/pointer.svg");
+  position: absolute;
+  top: 0.2rem;
+  left: -1.5rem;
+  width: 12px;
+  height: 10px;
+  color: #4b4f5a;
+}
+
+.tab-img {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* #tab-slider .tab-slide:not(.active-content){
+    display:none;
+} */
+
+#slider-btns {
+  position: absolute;
+  top: 35%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.slider-tab-btn {
+  margin-block: 5px;
+  color: #fff;
+  background-color: #5a91c7;
+  border: 1px solid #5a91c7;
+  padding: 0.3rem 0rem;
+  border-radius: 5px;
+  font-size: 2rem;
+  transition: all 0.3s;
+  cursor: pointer;
+  width: 17%;
+}
+.slider-tab-btn img {
+  width: 40%;
+}
+.slider-tab-btn:hover {
+  background-color: #3b74ad;
+  border: 1px solid #3b74ad;
+}
